@@ -1,22 +1,6 @@
-/**
- * For CSCI 1933 Project 2
- * The Fen class was designed to load an object of type
- * Board with any chess board state given a proper
- * Forsyth-Edwards Notation code. Simply pass a String
- * version of a FEN code and an instance of the Board
- * class to the load function. Example fen codes below.
- * You can find utilities to make FEN codes online, this
- * will help tremendously when debugging.
- *
- * Example FEN codes:
- * empty board: "8/8/8/8/8/8/8/8"
- * starting pos: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"
- * smiley: "8/8/2K2K2/8/2Q2Q2/2Q2Q2/3QQ3/8"
- * "The Immortal Game" ending pos: "r1bk3r/p2pBpNp/n4n2/1p1NP2P/6P1/3P4/P1P1K3/q5b1"
- */
+
 import java.util.HashMap;
 import java.util.Map;
-// Seen by Maggie Jiang, Jian0886
 public class Fen {
     /**
      * Method for populating a Board object with chess
