@@ -1,5 +1,4 @@
 import java.util.Scanner;
-// Edited by Maggie Jiang, Jian0886
 public class Piece {
 
     char character;
@@ -14,13 +13,6 @@ public class Piece {
         this.isBlack = isBlack;
     }
 
-    /**
-     * Determines if moving this piece is legal.
-     * @param board     The current state of the board.
-     * @param endRow    The destination row of the move.
-     * @param endCol    The destination column of the move.
-     * @return If the piece can legally move to the provided destination on the board.
-     */
     public boolean isMoveLegal(Board board, int endRow, int endCol) {
         switch (this.character) {
             case '\u2659':
@@ -52,29 +44,18 @@ public class Piece {
         }
     }
 
-    /**
-     * Sets the position of the piece.
-     * @param row   The row to move the piece to.
-     * @param col   The column to move the piece to.
-     */
+
     public void setPosition(int row, int col) {
         this.row = row;
         this.col = col;
     }
 
-    /**
-     * Return the color of the piece.
-     * @return  The color of the piece.
-     */
+ 
     public boolean getIsBlack() {
         return isBlack;
     }
 
-    /**
-     * Handle promotion of a pawn.
-     * @param row Current row of the pawn
-     * @param isBlack Color of the pawn
-     */
+    
     public void promotePawn(int row, boolean isBlack) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose your promotion: \n Queen \n Rook \n Knight \n Bishop");      //Gives player the options
@@ -101,10 +82,6 @@ public class Piece {
     }
 
 
-    /**
-     * Returns a string representation of the piece.
-     * @return  A string representation of the piece.
-     */
     public String toString() {
         return String.valueOf(this.character);
     }
