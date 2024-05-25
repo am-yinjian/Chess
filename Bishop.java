@@ -1,4 +1,4 @@
-// Written by Maggie Jiang, Jian0886
+
 public class Bishop {
     private int row;
     private int col;
