@@ -1,4 +1,3 @@
-// Written by Maggie Jiang, Jian0886
 
 import java.util.Scanner;
 public class Game {
